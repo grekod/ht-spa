@@ -1,0 +1,56 @@
+label {
+    display: inline-block;
+    width: 3em;
+    margin: .5em 0;
+    color: #607D8B;
+    font-weight: bold;
+  }
+  input {
+    margin: 5px;
+    height: 2em;
+    font-size: 1em;
+    padding-left: .4em;
+  }
+  button {
+    font-family: Arial;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+  }
+
+  button:hover {
+    background-color: #cfd8dc;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  
+  .buttone {
+    margin-top: 20px;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: black;
+    background-color: rgb(0, 255, 0);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+ 
+  button:hover{
+    opacity: 0.7;
+  }

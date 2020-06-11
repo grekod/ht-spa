@@ -1,0 +1,28 @@
+<nav>
+    <button routerLink="/memories-dashboard"> Memories Dashboard </button>
+    <button routerLink="/memories"> Memories List </button>
+</nav>
+
+<span>
+  <button routerLink="/memories/new"> Add </button>
+</span>
+
+<!--
+  Az archive itt úgy működik, hogy ha archiválva van, akkor nem jelenik meg a többi
+  elem között, de direkt url alapján még el lehet érni, és restore-olni.
+-->
+
+<div class="grid grid-pad">
+  <a *ngFor="let memory of memories" class="col-1-4"
+      routerLink="/memories/{{memory.id}}">
+      <div *ngIf=!memory.archived>
+    <div class="module">
+        <img src="{{memory.imgURL}}" alt="memory image" style="width:100%">
+      <h4>Manufacturer: {{memory.manufacturer}}</h4>
+      <h4>Type: {{memory.type}}</h4>
+      <h4>Purchase Price: {{memory.purchasePrice}} Ft</h4>
+      <h4>Selling Price: {{memory.sellingPrice}} Ft</h4>
+    </div>
+    </div>
+  </a>
+</div>

@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div >
+  <div class="card">
+      <img src={{memo.imgURL}} alt="Memory image" style="width:100%">
+      <h2><a>Manufacturer:</a> {{memo.manufacturer}} </h2>
+      <p><a>Type:</a> {{memo.type}} </p>
+      <p><a>Purchase Price:</a> {{memo.purchasePrice}} Ft </p>
+      <p><a>Selling Price:</a> {{memo.sellingPrice}} Ft </p>
+      <p><a>Socket:</a> {{memo.socket}} </p>
+      <p><a>Memory Size:</a> {{memo.memorySize}} GB </p>
+      <p><a>Height:</a> {{memo.size}} cm</p>
+      <p><a>CAS Latency:</a> {{memo.latency}} </p>
+      <p><a>Archived:</a> {{memo.archived}} </p>
+
+      <button class="buttone" routerLink="/memories/{{memo.id}}/edit" >Edit</button>
+      <button class="butthreen" (click)="Archive()">Archive/Restore</button>
+      <button class="buttwon" (click)="Delete()">Delete</button>
+
+  </div>
+</div>
+
+<button (click)="goBack()"> Go Back</button>

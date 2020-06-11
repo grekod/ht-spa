@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="card">
+
+    <img src={{memory.imgURL}} alt="Memory image" style="width:100%">
+    <div>
+        <p>Manufacturer:
+        <input required [(ngModel)]="memory.manufacturer" placeholder="Manufacturer"/></p>
+        <p>Type:
+        <input required [(ngModel)]="memory.type" placeholder="Type"/>/<p>
+        <p>
+        Image:
+        <input [(ngModel)]="memory.imgURL" placeholder="Url of the Image"/>
+        </p>
+        <p>Purchase Price:
+        <input type="number" [(ngModel)]="memory.purchasePrice" placeholder="PurchasePrice"/> Ft</p>
+        <p>Selling Price:
+        <input type="number" [(ngModel)]="memory.sellingPrice" placeholder="SellingPrice"/> Ft</p>
+        <p>Socket:
+        <input type="foglalat" [(ngModel)]="memory.Socket" placeholder="socket: DDR3/DDR4"/></p>
+        <p>MemorySize:
+        <input type="number" [(ngModel)]="memory.memorySize" placeholder="MemorySize"/> GB</p>
+        <p>Height:
+        <input type="number" [(ngModel)]="memory.size" placeholder="Height"/> cm</p>
+        <p>Latency:
+        <input type="number" [(ngModel)]="memory.latency" placeholder="Latency"/></p>
+    </div>
+    <button class="buttone" (click)="save()" >Save</button>
+
+</div>
+
+<button (click)="goBack()"> Go Back</button>
